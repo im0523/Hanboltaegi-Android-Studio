@@ -1,0 +1,179 @@
+<resources>
+    <string name="textview_message" formatted="false">%1$20s %2$20s %3$20s \n</string>
+
+    <string name="cok_hint">이 레시피의 탄생배경을 적어주세요.\n예) 심심해서 김치찌개를 끓여봤어용 ㅎ.\n사실 조상부터 내려온 비법을 공개하는거랍니다.\n팔로우 많이 눌러주세요옹 ㅎㅎ.</string>
+    <string name="choice">선택</string>
+    <string name="degree">난이도</string>
+    <string name="portion">인원</string>
+    <string name="time">시간</string>
+    <string-array name="cat1">
+        <item>종류별</item>
+        <item>반찬</item>
+        <item>국류</item>
+        <item>디저트</item>
+        <item>면</item>
+        <item>양념/소스</item>
+        <item>밥/죽/떡</item>
+        <item>샐러드</item>
+        <item>빵</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="cat2">
+        <item>상황별</item>
+        <item>초스피드</item>
+        <item>일상</item>
+        <item>손님접대</item>
+        <item>술안주</item>
+        <item>간식</item>
+    </string-array>
+
+    <string-array name="cat3">
+        <item>재료별</item>
+        <item>육류</item>
+        <item>해산물</item>
+        <item>가공식품</item>
+    </string-array>
+
+    <string-array name="cat4">
+        <item>제철요리</item>
+        <item>봄</item>
+        <item>여름</item>
+        <item>가을</item>
+        <item>겨울</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="cok_portion">
+        <item>1인분</item>
+        <item>2인분</item>
+        <item>3인분</item>
+        <item>4인분</item>
+        <item>5인분</item>
+        <item>6인분이상</item>
+    </string-array>
+
+    <string-array name="cok_time">
+        <item>5분이내</item>
+        <item>10분이내</item>
+        <item>15분이내</item>
+        <item>20분이내</item>
+        <item>30분이내</item>
+        <item>60분이내</item>
+        <item>90분이내</item>
+        <item>120분이내</item>
+        <item>120분이상</item>
+    </string-array>
+
+    <string-array name="cok_degree">
+        <item>아무나</item>
+        <item>초급</item>
+        <item>중급</item>
+        <item>고급</item>
+        <item>신의 경지</item>
+    </string-array>
+    <string name="app_name">한볼테기</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hint_id">아이디를 입력하세요</string>
+    <string name="hint_pw">비밀번호를 입력하세요</string>
+    <string name="member">회원 가입</string>
+
+    <string name="recipe_kind">종류별</string>
+    <string name="recipe_situation">상황별</string>
+    <string name="recipe_material">재료별</string>
+    <string name="recipe_way">방법별</string>
+    <string name="recipe_season">제철요리</string>
+
+    <string name="my_recipe1">내가 올린 레시피</string>
+    <string name="my_recipe2">내가 본 레시피</string>
+    <string name="my_re_sc">스크랩한 레시피</string>
+    <string name="my_inquiry">문의하기</string>
+
+    <string name="today_recipe">이주의  인기  레시피</string>
+    <string name="month_chef">이달의  쉐프  랭킹</string>
+    <string name="week_search">이주의  인기  검색어</string>
+
+    <string name="nickname">닉네임</string>
+    <string name="setting">회원정보변경</string>
+    <string name="follower">팔러워</string>
+    <string name="following">팔러잉</string>
+
+    <string name="login">로그인</string>
+    <string name="kakao_login">카카오톡 로그인</string>
+    <string name="configuration_Settings">환경설정</string>
+
+    <string name="nick_change">닉네임 변경</string>
+    <string name="profile_change">프로필 사진 변경</string>
+    <string name="logout">로그아웃</string>
+
+    <string name="no_member">회원이 아니세요?</string>
+    <string name="join_member">회원가입하기</string>
+
+    <string name="ID">ID :</string>
+    <string name="PW">PW :</string>
+
+    <string name="notice">공지사항</string>
+    <string name="help">도움말</string>
+    <string name="inquire">1:1 문의</string>
+
+    <string name="bottom_1">홈</string>
+    <string name="bottom_2">스크랩</string>
+    <string name="bottom_3">커뮤니티</string>
+    <string name="bottom_4">레시피</string>
+    <string name="bottom_5">랭킹</string>
+    <string name="exit">나가기</string>
+
+    <string name="kakao_login2">kakaologin</string>
+    <string name="kakao_app_key">684775c8f3f5937349e3444deacd6f74</string>
+    <string name="service01">이용약관, 개인정보 수집 및 이용에 모두 동의합니다.</string>
+    <string name="service02">한볼테기 이용약관 동의</string>
+    <string name="service03">개인정보 수집 및 이용 안내</string>
+    <string name="myinquire">[ 내 문의내역 ]</string>
+    <string name="myinquire2">1:1 문의하기</string>
+    <string name="srank">순위</string>
+    <string name="chefrank">쉐프 랭킹</string>
+    <string name="to_re">오늘의 레시피</string>
+    <string name="che_rank">쉐프 랭킹</string>
+    <string name="mo_re">이달의 레시피</string>
+
+    <string name="side_re">반찬 레시피</string>
+    <string name="soup_re">국류 레시피</string>
+    <string name="dessert_re">디저트 레시피</string>
+    <string name="noodle_re">면류 레시피</string>
+    <string name="source_re">양념/소스 레시피</string>
+    <string name="bob_re">밥/죽/떡 레시피</string>
+    <string name="salad_re">샐러드 레시피</string>
+    <string name="bbang_re">빵 레시피</string>
+    <string name="gita_re">기타 레시피</string>
+
+    <string name="memberinfochange">개인 정보 변경</string>
+    <string name="id">아이디</string>
+    <string name="password">비밀번호</string>
+    <string name="password2">비밀번호확인</string>
+    <string name="email">이메일</string>
+    <string name="back">뒤로가기</string>
+    <string name="mon_recipe">이달의 레시피</string>
+    <string name="title">제목</string>
+    <string name="date">날짜</string>
+    <string name="naeyong">내용</string>
+    <string name="infochange">정보 변경</string>
+    <string name="memberjoin">회원 가입</string>
+    <string name="mainscreen">메인 화면</string>
+    <string name="title2">제목 :</string>
+    <string name="weather">날짜 :</string>
+    <string name="content">내용 :</string>
+    <string name="save">저장</string>
+    <string name="cancle">취소</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="follow">팔로우</string>
+    <string name="week_recipe">이주의 레시피</string>
+
+</resources>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--회원가입-->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/brightGreen"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/member"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/id"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+        <EditText
+            android:id="@+id/userid"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:singleLine = "true"
+            android:lines = "1"/>
+
+        <TextView
+            android:id="@+id/joongbokId"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="중복확인"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/nickname"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+        <EditText
+            android:id="@+id/nickname"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:singleLine = "true"
+            android:lines = "1"/>
+
+        <TextView
+            android:id="@+id/joongbokNick"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="중복확인"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+        <EditText
+            android:id="@+id/userpwd"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:singleLine = "true"
+            android:lines = "1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/password2"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+        <EditText
+            android:id="@+id/userpwd_ck"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:singleLine = "true"
+            android:lines = "1"/>
+
+        <ImageView
+            android:id="@+id/setImage1"
+            android:layout_width="24dp"
+            android:layout_height="30dp"
+            android:scaleType="fitStart"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:singleLine = "true"
+            android:lines = "1"/>
+
+        <ImageView
+            android:id="@+id/setImage2"
+            android:layout_width="24dp"
+            android:layout_height="30dp"
+            android:scaleType="fitStart"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/btnReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/memberjoin"
+            android:onClick="btnRegClicked"
+            android:background="@drawable/round_button"
+            android:textColor="@color/white"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp" />
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:background="@drawable/round_button2"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

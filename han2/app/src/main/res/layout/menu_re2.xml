@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/brightGreen"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <ImageView
+            android:id="@+id/back_go"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/back_black"/>
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/recipe_situation"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+    </androidx.appcompat.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorSilver"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+
+    </LinearLayout>
+
+    <!--카테고리 이미지-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/category_img1"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/category1"
+            android:padding="4dp"/>
+
+        <ImageView
+            android:id="@+id/category_img2"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/category2"
+            android:padding="4dp"/>
+
+        <ImageView
+            android:id="@+id/category_img3"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/category3"
+            android:padding="4dp"/>
+
+        <ImageView
+            android:id="@+id/category_img4"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/category4"
+            android:padding="4dp"/>
+
+
+    </LinearLayout>
+
+    <!--카테고리 텍스트뷰-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/category_tv1"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:text="종류별"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/category_tv2"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:text="상황별"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/category_tv3"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:text="재료별"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/category_tv4"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:text="제철요리"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+
+    </LinearLayout>
+
+    <!--줄 긋기-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@color/gray" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+
+    </LinearLayout>
+
+
+    <!--아이콘 1-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/all_img"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/all"
+            android:padding="4dp"/>
+
+        <ImageView
+            android:id="@+id/speed_img"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/speed"
+            android:padding="4dp"/>
+
+        <ImageView
+            android:id="@+id/daily_img"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/daily"
+            android:padding="4dp"/>
+
+        <ImageView
+            android:id="@+id/guest_img"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/guest"
+            android:padding="4dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/all"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="전체"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/situation_1"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:text="초스피드"
+            android:gravity="center"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/situation_2"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:text="일상"
+            android:gravity="center"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/situation_3"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:text="손님접대"
+            android:gravity="center"
+            android:layout_marginLeft="25dp"/>
+
+    </LinearLayout>
+
+    <!--아이콘 2-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/snack_img"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/alcohol"
+            android:padding="4dp"/>
+
+        <ImageView
+            android:id="@+id/appetizer_img"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/appetizer"
+            android:padding="4dp"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/situation_4"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:text="술안주"
+            android:gravity="center"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/situation_5"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:text="간식"
+            android:gravity="center"
+            android:layout_marginLeft="25dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

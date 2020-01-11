@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/brightGreen"
+        android:theme="@style/AppTheme.NoActionBar">
+        <ImageView
+            android:id="@+id/back_go"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/back_black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="이용 약관(동의)"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="@string/service01"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"/>
+
+        <CheckBox
+            android:id="@+id/chk_all"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="280dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/service02"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            />
+
+        <CheckBox
+            android:id="@+id/chk_1"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="@string/service03"
+            android:textColor="@color/black"/>
+        <CheckBox
+            android:id="@+id/chk_2"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/btnAgree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="동의"
+            android:background="@drawable/round_button"
+            android:textColor="@color/white"
+            android:layout_marginRight="30dp"/>
+        <Button
+            android:id="@+id/btnDisagree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비동의"
+            android:background="@drawable/round_button2"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</LinearLayout>

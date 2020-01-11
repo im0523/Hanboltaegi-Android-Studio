@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="#FFFFFFFF"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/pro_delete"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_delete"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/pro_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:gravity="center"
+                    android:text="99"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/pro_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:gravity="left|center"
+                    android:hint=" 예) 손질 &amp; 세척된 새우에 맛술 1스푼, 가는소금 1/3스푼, 후춧가루 약간을 넣어 밑간을 해주세요."
+                    android:textSize="18sp" >
+
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/pro_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:background="@drawable/btn_image"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

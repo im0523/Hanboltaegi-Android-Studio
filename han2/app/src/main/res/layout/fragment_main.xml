@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainscreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/main_recipe1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/brightGreen"
+            android:text="@string/recipe_kind"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/main_recipe2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/brightGreen"
+            android:text="@string/recipe_situation"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/main_recipe3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/brightGreen"
+            android:text="@string/recipe_material"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/main_recipe4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/brightGreen"
+            android:text="@string/recipe_season"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/main_menu1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/brightGreen"
+                android:text="@string/today_recipe"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/main_menu2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/brightGreen"
+                android:text="@string/month_chef"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="157dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"></androidx.recyclerview.widget.RecyclerView>
+
+                    <ImageView
+                        android:id="@+id/main_chef1"
+                        android:layout_width="50dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rank1" />
+
+                    <ImageView
+                        android:id="@+id/main_chef2"
+                        android:layout_width="50dp"
+                        android:layout_height="42dp"
+                        android:layout_below="@+id/main_chef1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rank2" />
+
+                    <ImageView
+                        android:id="@+id/main_chef3"
+                        android:layout_width="50dp"
+                        android:layout_height="42dp"
+                        android:layout_below="@+id/main_chef2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rank3" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/main_menu3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/brightGreen"
+                android:text="@string/week_search"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:layout_marginBottom="50dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                   >
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+                    <ImageView
+                        android:id="@+id/main_search1"
+                        android:layout_width="50dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rank11" />
+
+                    <ImageView
+                        android:id="@+id/main_search2"
+                        android:layout_width="50dp"
+                        android:layout_height="42dp"
+                        android:layout_below="@+id/main_search1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rank22" />
+
+                    <ImageView
+                        android:id="@+id/main_search3"
+                        android:layout_width="50dp"
+                        android:layout_height="42dp"
+                        android:layout_below="@+id/main_search2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rank33" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

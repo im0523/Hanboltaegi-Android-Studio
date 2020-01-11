@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/brightGreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <ImageView
+                android:id="@+id/back_go"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:src="@drawable/back_black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="커뮤니티"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="댓글작성"
+            android:textSize="20sp"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/co_BtnWrite"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="글쓰기"
+            android:layout_gravity="right"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <EditText
+                android:id="@+id/cText01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lines="3"
+                android:inputType="textMultiLine"
+                android:scrollHorizontally="false"
+                android:scrollbars="vertical"
+                android:maxLength="100"/>
+
+        </ScrollView>
+
+    </LinearLayout>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="top"
+        android:layout_marginBottom="55dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
